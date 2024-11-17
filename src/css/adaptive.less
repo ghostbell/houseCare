@@ -1,0 +1,901 @@
+/* 1190 - 1259 */
+@media screen and (max-width: 1260px) {
+  .container {
+    max-width: 980px;
+  }
+
+  .project,
+  .project:nth-of-type(2n) {
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .project-info {
+    text-align: center;
+  }
+
+  .characteristics {
+    justify-content: center;
+  }
+
+  .project-actions {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+
+    .yellow-btn {
+      margin-bottom: 0;
+    }
+  }
+
+  .technology {
+    & > svg {
+      display: none;
+    }
+
+    &:nth-child(1) .technology-btn {
+      left: 280px;
+    }
+    &:nth-child(2) .technology-btn {
+      left: 195px;
+    }
+    &:nth-child(3) {
+      right: 215px;
+    }
+    &:nth-child(3) .technology-btn {
+      left: -85px;
+    }
+    &:nth-child(4) .technology-btn {
+      left: -165px;
+    }
+    &:nth-child(5) .technology-btn {
+      left: -95px;
+    }
+  }
+
+  .guarantee-info p span {
+    white-space: initial;
+  }
+
+  .consultation .container {
+    gap: 35px;
+  }
+
+  .consultation-image {
+    display: flex;
+    align-items: center;
+
+    img {
+      height: auto;
+      max-width: 545px;
+    }
+  }
+
+  .scroll {
+    left: -92px;
+    bottom: -320px;
+  }
+
+  .pop-up-menu {
+    padding-left: 210px;
+  }
+}
+
+/* 1024 - 1189 */
+@media screen and (max-width: 1100px) {
+  .container {
+    max-width: 800px;
+  }
+
+  .scroll {
+    left: -55px;
+  }
+
+  .steps-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .guarantees-items {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    grid-row-gap: 24px;
+  }
+
+  .advantages-items {
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 40px;
+  }
+
+  .advantage:last-of-type {
+    grid-column: 1 / 3;
+  }
+
+  .consultation .container {
+    flex-direction: column;
+  }
+
+  .consultation-image {
+    justify-content: center;
+  }
+
+  .slick-active.slick-center {
+    height: 192px;
+  }
+
+  .general-info, .experience .characteristics {
+    transform: scale(0.65);
+    gap: 8px;
+  }
+
+  .slick-track {
+    padding-bottom: 0;
+  }
+
+  .technology {
+    &:not(.active) .technology-info {
+      display: none;
+    }
+
+    &:nth-child(1) {
+      position: absolute;
+    }
+
+    &:nth-child(n) {
+      left: calc(45% - 265px / 2);
+      bottom: 62px;
+      top: unset;
+      right: unset;
+      .technology-btn {
+        //transform: scale(1.2);
+      }
+    }
+
+    &:nth-child(n).active {
+
+      & path {
+        stroke: #fcedcb;
+      }
+
+      & g path {
+        fill: #fcedcb;
+      }
+    }
+
+    &.active {
+      background-color: #313139;
+      padding: 21px 16px 19px;
+
+      &::after {
+        content: '';
+        width: 20px;
+        height: 20px;
+        top: -10px;
+        left: 112px;
+        position: absolute;
+        z-index: 1;
+        transform: rotate(45deg);
+        background-color: #313139;
+      }
+    }
+
+    &:nth-child(2),
+    &:nth-child(4) {
+      max-width: 345px;
+    }
+
+    &:nth-child(3) {
+      max-width: 385px;
+    }
+
+    &:nth-child(1) .technology-btn {
+      left: -20px;
+      top: -612px;
+    }
+    &.active:nth-child(1) .technology-btn {
+      left: -20px;
+      top: -480px;
+    }
+    &:nth-child(2) .technology-btn {
+      left: -70px;
+      top: -388px;
+    }
+    &.active:nth-child(2) .technology-btn {
+      left: -70px;
+      top: -255px;
+    }
+    &:nth-child(3) .technology-btn {
+      left: 100px;
+      top: -225px;
+    }
+    &.active:nth-child(3) .technology-btn {
+      left: 100px;
+      top: -92px;
+    }
+    &:nth-child(4) .technology-btn {
+      left: 230px;
+      top: -420px;
+    }
+    &.active:nth-child(4) .technology-btn {
+      left: 230px;
+      top: -288px;
+    }
+    &:nth-child(5) .technology-btn {
+      left: 330px;
+      top: -568px;
+    }
+    &.active:nth-child(5) .technology-btn {
+      left: 330px;
+      top: -457px;
+    }
+  }
+
+  .slick-active:not(.slick-center)::after {
+    background-color: #25252d;
+  }
+
+  .slick-active.slick-center {
+    transform: scale(1.75);
+  }
+}
+
+/* 768 - 1023 */
+@media screen and (max-width: 881px) {
+  .container,
+  .slick-list {
+    max-width: 600px;
+  }
+
+  .hero-section .container {
+    grid-template-columns: 1fr;
+  }
+
+  .scroll,
+  .socials {
+    display: none;
+  }
+
+  .project-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .experience-info .dimensions span:first-child,
+  .experience-info .area span:first-child {
+    display: none;
+  }
+
+  .slick-active.slick-center {
+    height: 170px;
+  }
+
+  .general-info, .experience .characteristics {
+    transform: scale(0.55);
+  }
+
+  .technology {
+    &:nth-child(1) .technology-btn {
+      left: -30px;
+      top: -612px;
+    }
+    &.active:nth-child(1) .technology-btn {
+      left: -30px;
+      top: -480px;
+    }
+    &:nth-child(2) .technology-btn {
+      left: -80px;
+      top: -388px;
+    }
+    &.active:nth-child(2) .technology-btn {
+      left: -80px;
+      top: -255px;
+    }
+    &:nth-child(3) .technology-btn {
+      left: 90px;
+      top: -225px;
+    }
+    &.active:nth-child(3) .technology-btn {
+      left: 90px;
+      top: -92px;
+    }
+    &:nth-child(4) .technology-btn {
+      left: 220px;
+      top: -420px;
+    }
+    &.active:nth-child(4) .technology-btn {
+      left: 220px;
+      top: -288px;
+    }
+    &:nth-child(5) .technology-btn {
+      left: 320px;
+      top: -568px;
+    }
+    &.active:nth-child(5) .technology-btn {
+      left: 320px;
+      top: -457px;
+    }
+  }
+}
+
+/* 640 - 767 */
+@media screen and (max-width: 770px) {
+  .container,
+  .slick-list {
+    max-width: 400px;
+  }
+
+  .steps-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
+
+  .technologies-image img {
+    max-width: 400px;
+  }
+
+  .header-phone {
+    display: none;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+
+  .project-gallery {
+    grid-template-rows: repeat(2, auto);
+
+    a:first-child img {
+      max-width: 400px;
+    }
+
+    img {
+      max-width: 117px;
+    }
+  }
+
+  .project > span {
+    display: inline-block;
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  .project-info > span {
+    display: none;
+  }
+
+  .project-info p {
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .characteristic span {
+    font-size: 15px;
+  }
+
+  .characteristics {
+    gap: 17px;
+  }
+
+  .project, .project:nth-of-type(2n) {
+    gap: 26px;
+    align-items: initial;
+  }
+
+  .projects .project:nth-of-type(n) {
+    margin-bottom: 90px;
+  }
+
+  .btn {
+    font-size: 16px;
+  }
+
+  .projects-btn {
+    font-size: 15px;
+  }
+
+  .steps-container {
+    grid-row-gap: 50px;
+  }
+
+  .step-info,
+  .step:nth-child(4) .step-info,
+  .step:nth-child(6) .step-info {
+    max-width: 100%;
+  }
+
+  .consultation-image img {
+    max-width: 100%;
+  }
+
+  .slick-active.slick-center {
+    justify-content: center;
+  }
+
+  .experience-info {
+    width: 85%;
+
+    svg {
+      margin-left: -18px;
+    }
+  }
+
+  .consultation {
+    padding-bottom: 0;
+  }
+
+  .booking {
+    padding: 91px 0;
+    background-size: cover;
+  }
+
+  .booking-info {
+    height: 227px;
+  }
+
+  .footer {
+    padding-bottom: 85px;
+
+    .container {
+      grid-template-columns: 1fr;
+      grid-row-gap: 50px;
+    }
+
+    .socials {
+      display: flex;
+      padding-top: 45px;
+    }
+  }
+
+  .logo-socials {
+    grid-row: 1;
+  }
+
+  .footer-info {
+    align-items: center;
+  }
+
+  .footer-phone {
+    justify-self: center;
+  }
+
+  .guarantee {
+    align-items: initial;
+    padding: 20px 11px 20px 20px;
+    gap: 20px;
+  }
+
+  .guarantee-image img {
+    width: 35px;
+  }
+
+  .advantages-items {
+    grid-template-columns: 1fr;
+  }
+
+  .advantage:last-of-type {
+    grid-column: initial;
+  }
+
+  .technology {
+    width: 100%;
+
+    &:nth-child(1) .technology-btn {
+      left: 55px;
+      top: -510px;
+    }
+    &.active:nth-child(1) .technology-btn {
+      left: 55px;
+      top: -398px;
+    }
+    &:nth-child(2) .technology-btn {
+      left: 20px;
+      top: -355px;
+    }
+    &.active:nth-child(2) .technology-btn {
+      left: 20px;
+      top: -222px;
+    }
+    &:nth-child(3) .technology-btn {
+      left: 145px;
+      top: -240px;
+    }
+    &.active:nth-child(3) .technology-btn {
+      left: 145px;
+      top: -86px;
+    }
+    &:nth-child(4) .technology-btn {
+      left: 227px;
+      top: -378px;
+    }
+    &.active:nth-child(4) .technology-btn {
+      left: 227px;
+      top: -245px;
+    }
+    &:nth-child(5) .technology-btn {
+      left: 298px;
+      top: -474px;
+    }
+    &.active:nth-child(5) .technology-btn {
+      left: 298px;
+      top: -362px;
+    }
+
+    &:nth-child(n) {
+      left: initial;
+      max-width: 100%;
+      box-sizing: border-box;
+      bottom: 40px;
+    }
+  }
+
+  .pop-up-menu {
+    padding-left: 140px;
+    padding-bottom: 204px;
+
+    .socials {
+      display: flex;
+      padding-top: 0;
+    }
+
+    .header-phone {
+      display: grid;
+      margin-top: 50px;
+
+      .phone {
+        margin-bottom: 0;
+      }
+
+      .call-btn {
+        gap: 0;
+
+        img {
+          margin-left: -10px;
+        }
+      }
+    }
+  }
+
+  .booking-modal-container {
+    max-width: 400px;
+    font-size: 16px;
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  .form input, .form input::placeholder {
+    font-size: 16px;
+  }
+
+  .footer-info {
+    gap: 15px;
+  }
+}
+
+/* 425 - 640 */
+@media screen and (max-width: 460px) {
+  body,
+  .project-info p,
+  .technology-info p {
+    font-size: 14px;
+  }
+
+  .container {
+    max-width: 290px;
+  }
+
+  h1 {
+    font-size: 26px;
+    margin: 0 0 26px 0;
+  }
+
+  .hero-section-info p {
+    margin: 0 auto 30px;
+  }
+
+  .hero-section-btn {
+    width: 228px;
+    box-sizing: border-box;
+    padding: 18px;
+  }
+
+  .main {
+    background-size: cover;
+  }
+
+  .btn {
+    border-radius: 25px;
+  }
+
+  .transparent-btn,
+  .yellow-btn {
+    padding: 17px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .projects h2 {
+    text-align: left;
+  }
+
+  .project-gallery {
+    gap: 12px;
+  }
+
+  .project-gallery a:first-child img {
+    max-width: 290px;
+  }
+
+  .project-gallery img {
+    max-width: 89px;
+  }
+
+  .characteristic {
+    width: 85px;
+    height: 85px;
+    padding: 0 8px;
+  }
+
+  .project-btn {
+    width: 100%;
+    padding: 18px 9px;
+  }
+
+  .project-info p,
+  .characteristics {
+    margin-bottom: 40px;
+  }
+
+  .project-actions {
+    gap: 20px;
+  }
+
+  .projects .project.last {
+    margin-bottom: 60px;
+  }
+
+  .projects-btn {
+    margin-top: 0;
+  }
+
+  .projects {
+    padding-bottom: 45px;
+  }
+
+  .technologies {
+    padding-top: 45px;
+
+    h2 {
+        line-height: 1.167;
+    }
+  }
+
+  .technologies-image img {
+    width: 290px;
+  }
+
+  .pop-up-menu {
+    padding: 35px 15px 80px;
+
+    .call-btn a {
+      font-size: 14px;
+      margin-left: -10px;
+    }
+
+    .header-phone {
+      justify-content: flex-start;
+
+      .phone {
+        font-size: 16px;
+      }
+    }
+
+    .title {
+      font-size: 35px;
+    }
+  }
+
+  .technology:nth-child(n) {
+    bottom: 75px;
+  }
+
+  .technology {
+    &:nth-child(3),
+    &:nth-child(2) {
+      bottom: 38px;
+    }
+    &:nth-child(5) {
+      bottom: 93px;
+    }
+
+    &:nth-child(1) .technology-btn {
+      left: 25px;
+      top: -395px;
+    }
+    &.active:nth-child(1) .technology-btn {
+      left: 25px;
+      top: -273px;
+    }
+    &:nth-child(2) .technology-btn {
+      left: 0;
+      top: -319px;
+    }
+    &.active:nth-child(2) .technology-btn {
+      left: 0;
+      top: -160px;
+    }
+    &:nth-child(3) .technology-btn {
+      left: 105px;
+      top: -244px;
+    }
+    &.active:nth-child(3) .technology-btn {
+      left: 105px;
+      top: -85px;
+    }
+    &:nth-child(4) .technology-btn {
+      left: 150px;
+      top: -302px;
+    }
+    &.active:nth-child(4) .technology-btn {
+      left: 150px;
+      top: -180px;
+    }
+    &:nth-child(5) .technology-btn {
+      left: 205px;
+      top: -350px;
+    }
+    &.active:nth-child(5) .technology-btn {
+      left: 205px;
+      top: -246px;
+    }
+  }
+
+  .technologies {
+    padding-bottom: 223px;
+  }
+
+  .step-info > span,
+  .step-info p,
+  .technology-info span {
+    font-size: 16px;
+  }
+
+  .step-info p {
+    font-weight: 100;
+  }
+
+  .step:nth-child(4) .step-info {
+    max-width: 62%;
+  }
+
+  .step:nth-child(2) .step-info {
+    letter-spacing: -0.5px;
+  }
+
+  .steps {
+    padding-bottom: 50px;
+  }
+
+  .experience h2 {
+    letter-spacing: -0.5px;
+  }
+
+  .guarantees h2,
+  .experience h2 {
+    line-height: 1.333;
+  }
+
+  .experience-info {
+    width: 100%;
+    margin-left: -20px;
+    height: 42px;
+
+    svg {
+      margin-left: -28px;
+    }
+  }
+
+  .general-info, .experience .characteristics {
+    transform: scale(0.45);
+  }
+
+  .experience .characteristics {
+    white-space: nowrap;
+    margin-left: -5px;
+  }
+
+  .guarantee-info > span,
+  .advantage span,
+  .advantage p,
+  .booking-info p {
+    font-size: 16px;
+  }
+
+  .guarantee {
+    padding-right: 7px;
+
+    &:last-of-type .guarantee-image img {
+      width: 29px;
+    }
+  }
+
+  .advantage-image {
+    width: 100px;
+    height: 100px;
+
+    img {
+      width: 50px;
+    }
+  }
+
+  .advantage:nth-child(2) {
+    grid-row: 1 / 2;
+  }
+
+  .guarantees-btn {
+    padding: 17px 12px;
+    font-size: 14px;
+    line-height: 1;
+  }
+
+  .consultation-image img {
+    display: none;
+  }
+
+  .consultation {
+    padding-top: 50px;
+
+    .container {
+      flex-direction: column;
+      gap: initial;
+    }
+  }
+
+  .guarantees {
+    padding-bottom: 50px;
+  }
+
+  .checkbox a {
+    font-weight: 300;
+  }
+
+  .booking-modal-container {
+    max-width: 290px;
+    padding-left: 2px;
+    padding-right: 2px;
+    p {
+      font-size: 14px;
+    }
+
+    .checkbox {
+      gap: 15px 18px;
+      span {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .booking .form {
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+
+  .form input, .form input::placeholder {
+    font-size: 14px;
+  }
+
+  .form input {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .footer .phone {
+    font-size: 18px;
+  }
+}

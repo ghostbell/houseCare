@@ -38,7 +38,7 @@ $(document).ready(function () {
         gallery: {
             enabled: true,
             navigateByImgClick: true,
-            preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+            preload: [0, 1]
         },
         image: {
             tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
@@ -55,7 +55,7 @@ $(document).ready(function () {
         gallery: {
             enabled: true,
             navigateByImgClick: true,
-            preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+            preload: [0, 1]
         },
         image: {
             tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
@@ -90,7 +90,6 @@ $(document).ready(function () {
         let phone = $('#consultation-phone');
         let checkboxPath = $('.consultation .non-checked path');
 
-        // loader.css('display', 'flex');
         name.css('border-color', 'rgb(255, 255, 255)');
         phone.css('border-color', 'rgb(255, 255, 255)');
         checkboxPath.css('stroke', 'rgb(255, 255, 255)');
@@ -143,7 +142,6 @@ $(document).ready(function () {
         let checkboxPath = $('.booking .non-checked path');
         let hasError = false;
 
-        // loader.css('display', 'flex');
         name.css('border-color', 'rgb(255, 255, 255)');
         phone.css('border-color', 'rgb(255, 255, 255)');
         checkboxPath.css('stroke', 'rgb(255, 255, 255)');
@@ -197,28 +195,25 @@ $(document).ready(function () {
     let showAdditionalText = $('#show-additional span');
     $('#show-additional').click(function () {
         if (showAdditionalText.text() === 'Посмотреть ещё 3 проекта') {
-            // console.log(showAdditionalText.text());
             $('.additional').css('display', 'flex');
             visibleProjects = $('.project:visible');
-            visibleProjects.removeClass('last'); // Добавляем класс last к последнему видимому проекту
-            visibleProjects.last().addClass('last'); // Добавляем класс last к последнему видимому проекту
+            visibleProjects.removeClass('last');
+            visibleProjects.last().addClass('last');
             showAdditionalText.text('Свернуть');
             showAdditionalText.next().css('transform', 'rotate(180deg)');
         } else {
             $('.additional').css('display', 'none');
             visibleProjects = $('.project:visible');
-            visibleProjects.removeClass('last'); // Добавляем класс last к последнему видимому проекту
-            visibleProjects.last().addClass('last'); // Добавляем класс last к последнему видимому проекту
+            visibleProjects.removeClass('last');
+            visibleProjects.last().addClass('last');
             showAdditionalText.text('Посмотреть ещё 3 проекта');
             showAdditionalText.next().css('transform', 'rotate(0)');
         }
     });
 
     $('.technology-btn').on('click', function() {
-        // Удаляем класс .active у всех родителей
         $('.technology-btn').parent().removeClass('active');
 
-        // Добавляем класс .active к родителю нажатой кнопки
         $(this).parent().addClass('active');
     });
 });

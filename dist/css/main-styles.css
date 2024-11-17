@@ -896,7 +896,6 @@ h2 {
   display: grid;
   justify-self: end;
 }
-/* 1190 - 1259 */
 @media screen and (max-width: 1260px) {
   .container {
     max-width: 980px;
@@ -964,7 +963,6 @@ h2 {
     padding-left: 210px;
   }
 }
-/* 1024 - 1189 */
 @media screen and (max-width: 1100px) {
   .container {
     max-width: 800px;
@@ -1092,7 +1090,6 @@ h2 {
     transform: scale(1.75);
   }
 }
-/* 768 - 1023 */
 @media screen and (max-width: 881px) {
   .container,
   .slick-list {
@@ -1161,7 +1158,6 @@ h2 {
     top: -457px;
   }
 }
-/* 640 - 767 */
 @media screen and (max-width: 770px) {
   .container,
   .slick-list {
@@ -1374,7 +1370,6 @@ h2 {
     gap: 15px;
   }
 }
-/* 425 - 640 */
 @media screen and (max-width: 460px) {
   body,
   .project-info p,
